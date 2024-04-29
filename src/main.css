@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .active {
+    color: white;
+    background-color: hsl(200, 100%, 50%);
+  }
+  .inactive {
+    opacity: 0.3;
+  }
+}
