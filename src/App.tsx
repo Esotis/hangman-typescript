@@ -32,7 +32,7 @@ function App() {
 
   // add the pressed keyboard to guessedLetters state
   useEffect(() => {
-    const handler = (event: KeyboardEvent) => {
+    const handler = (event: any) => {
       const key = event.key;
       if (!key.match(/^[a-z]$/)) return;
       event.preventDefault();
@@ -47,7 +47,7 @@ function App() {
 
   // if user pressed enter, then get a new wordToGuess
   useEffect(() => {
-    const handler = (event: KeyboardEvent) => {
+    const handler = (event: any) => {
       const key = event.key;
       if (key !== "Enter") return;
       event.preventDefault();
